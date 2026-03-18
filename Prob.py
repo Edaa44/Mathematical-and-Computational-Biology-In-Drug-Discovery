@@ -5,7 +5,7 @@ sensitivity = 0.99
 
 prevalence = np.linspace(0.00001, 0.5, 1000)
 
-specificities = [0.99, 0.999, 0.9999, 0.99999]
+specificities = [0.99, 0.999, 0.9999, 0.99999] # blue, orange, green, red in order
 
 def posterior_prob(p, sensitivity, specificities):
     return (sensitivity * p) / (sensitivity * p + (1 - specificities) * (1 - p))
